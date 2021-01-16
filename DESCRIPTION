@@ -1,0 +1,26 @@
+Package: purrrallel
+Type: Package
+Title: Parallelised Purrr
+Version: 0.1.0
+Author: person("Craig", "Gower", , "craig.gower@roche.com", c("aut", "cre"))
+Maintainer: Craig Gower <craig.gower@roche.com>
+Description: This package is a light weight wrapper around the parallel package to provide
+    functions with identical names and functionality to the purrr package but are fundermentally
+    parallelised. If no cluster has been setup these functions will just call their purrr
+    counterparts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown,
+    dplyr,
+    tidyr
+Depends:
+    R (>= 3.1.2)
+Imports:
+    purrr,
+    parallel
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
